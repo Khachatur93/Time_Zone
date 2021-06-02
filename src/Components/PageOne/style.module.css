@@ -1,0 +1,98 @@
+.global {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  overflow: hidden;
+  margin-top: 7.3%;
+}
+.one {
+  width: 70%;
+  height: 100%;
+}
+.two {
+  width: 30%;
+  height: 100%;
+  z-index: 1;
+}
+.img {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  animation: heart-pulse 2s infinite;
+  animation-direction: alternate;
+}
+.h1 {
+  margin-left: 10%;
+  margin-top: 15%;
+  font-size: 80px;
+  color: rgb(55, 38, 102);
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+}
+.p {
+  font-style: 30px;
+  margin-left: 10%;
+  position: relative;
+  animation-name: examplep;
+  animation-duration: 2s;
+}
+.but {
+  text-transform: uppercase;
+  background-color: rgb(92, 90, 90);
+  color: white;
+  margin-left: 10%;
+  direction: none;
+  padding: 1% 2.2%;
+  margin-top: 3%;
+  position: relative;
+  animation-name: exampleb;
+  animation-duration: 2s;
+  border: none;
+}
+@keyframes example {
+  0% {
+    left: -100%;
+    top: 0px;
+  }
+
+  100% {
+    left: 0%;
+    top: 0px;
+  }
+}
+@keyframes examplep {
+  0% {
+    left: -250%;
+    top: 0px;
+  }
+
+  100% {
+    left: 0%;
+    top: 0px;
+  }
+}
+@keyframes exampleb {
+  0% {
+    left: -350%;
+    top: 0px;
+  }
+
+  100% {
+    left: 0%;
+    top: 0px;
+  }
+}
+.but:hover {
+  background-color: red;
+}
+@keyframes heart-pulse {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
