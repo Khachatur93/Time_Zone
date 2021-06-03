@@ -6,6 +6,7 @@ import Arrivals from "../Arrivals/Arrivals";
 import ImageZone from "../ImagesZone/ImagesZone";
 import Popular from "../Popular/Popular";
 import VideoPage from "../VideoPage/VideoPage";
+import Choice from "../Choice/Choice";
 function Main() {
   return (
     <div className={style.main}>
@@ -15,6 +16,7 @@ function Main() {
       <ImageZone />
       <Popular />
       <VideoPage />
+      <Choice />
     </div>
   );
 }

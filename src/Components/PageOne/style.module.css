@@ -51,6 +51,9 @@
   animation-duration: 2s;
   border: none;
 }
+.but:hover {
+  background-color: red;
+}
 @keyframes example {
   0% {
     left: -100%;
@@ -84,9 +87,7 @@
     top: 0px;
   }
 }
-.but:hover {
-  background-color: red;
-}
+
 @keyframes heart-pulse {
   0% {
     transform: scale(1.1);
