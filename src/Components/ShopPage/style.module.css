@@ -1,0 +1,34 @@
+.cont {
+  width: 100%;
+  height: 100vh;
+}
+.colOne {
+  top: 14%;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://preview.colorlib.com/theme/timezone/assets/img/hero/about_hero.png);
+}
+.h1 {
+  font-size: 70px;
+  font-family: italic;
+  color: rgb(13, 13, 70);
+}
+.nav {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.link {
+  color: black;
+}
+.link:hover {
+  color: orangered !important;
+}
+.row {
+  width: 98%;
+  margin-left: 1% !important;
+}

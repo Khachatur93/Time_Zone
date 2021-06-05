@@ -1,15 +1,16 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import style from "./NavBar.module.css";
+import { NavLink } from "react-router-dom";
 import { logo } from "../ImgLinks/ImgLinks";
 function NavBar() {
   return (
     <Navbar bg="light" expand="lg" className={style.nav} fixed="top">
-      <Navbar.Brand href="#">
+      <Navbar.Brand exact>
         <img
           src={logo}
-          width="100"
-          height="25"
+          width="130"
+          height="30"
           className={style.logo}
           alt="React Bootstrap logo"
         />
@@ -17,36 +18,28 @@ function NavBar() {
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse className={style.link}>
         <Nav>
-          <Nav.Link className={style.nl} href="#action1">
+          <NavLink to="/Main" exact className={style.nl}>
             Home
-          </Nav.Link>
-          <Nav.Link className={style.nl} href="#action2">
+          </NavLink>
+          <NavLink to="/ShopPage" exact className={style.nl}>
             Shop
-          </Nav.Link>
-          <Nav.Link className={style.nl} href="#action2">
+          </NavLink>
+          <NavLink to="/About" exact className={style.nl}>
             About
-          </Nav.Link>
+          </NavLink>
 
-          <NavDropdown
-            className={style.nl}
-            title="Link"
-            id="navbarScrollingDropdown"
-          >
-            <NavDropdown.Item className={style.nl} href="#action3">
-              Action
-            </NavDropdown.Item>
-            <NavDropdown.Item className={style.nl} href="#action4">
+          <NavDropdown title="Link" id="navbarScrollingDropdown">
+            <NavDropdown.Item className={style.nl}>Action</NavDropdown.Item>
+            <NavDropdown.Item className={style.nl}>
               Another action
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action5">
-              Something else here
-            </NavDropdown.Item>
+            <NavDropdown.Item>Something else here</NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link className={style.nl} href="#action2">
+          <NavLink className={style.nl} to="/Contacts" exact>
             Contact
-          </Nav.Link>
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
