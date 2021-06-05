@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 import style from "./style.module.css";
 function Items(props) {
   return (
-    <Col xl={4} className={style.col}>
+    <Col xl={4} lg={6} md={12} sm={12} className={style.col}>
       <div className={style.d1}>
         <img className={style.img} src={props.img} alt="" />
         <button className={style.btn}>Add To Cart</button>
